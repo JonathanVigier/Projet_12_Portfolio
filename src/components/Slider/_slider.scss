@@ -1,0 +1,87 @@
+.slider {
+    position: relative;
+    height: 100%;
+
+    .chevron-left,
+    .chevron-right {
+        position: absolute;
+        top: 50%;
+        color: $solid-light-theme;
+        font-size: 78px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: .5s ease-in-out;
+
+        &:hover {
+            color: $solid-light-theme_hover;
+        }
+
+        @media screen and (max-width: 481px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .chevron-left {
+        left: 24px;
+
+        @media screen and (max-width: 481px) {
+            left: 5px;
+        }
+    }
+
+    .chevron-right {
+        right: 24px;
+
+        @media screen and (max-width: 481px) {
+            right: 5px;
+        }
+    }
+
+    .slide-container {
+        height: 100%;
+
+        .slide {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 25px;
+
+            @media screen and (max-width: 481px) {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .numbering-container {
+        position: absolute;
+        bottom: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px;
+        background: $tertiary-light-theme;
+        border-radius: 15px;
+
+        @media screen and (max-width: 481px) {
+            bottom: 10px;
+        }
+
+        .numbering {
+            color: $solid-light-theme;
+            font-size: 1.3rem;
+            font-family: $text-regular;
+
+            @media screen and (max-width: 481px) {
+                font-size: 14px;
+            }
+
+            @media screen and (min-width: 481px) and (max-width: 1024px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

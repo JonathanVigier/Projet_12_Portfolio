@@ -1,0 +1,9 @@
+.separation-line-container {
+    width: 100%;
+    height: 100px;
+    background: $separation-light-theme;
+
+    @media only screen and (max-width: 481px) {
+        height: 50px;
+    }
+}

@@ -1,0 +1,52 @@
+.hero-container {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "pp desc"
+        "techs desc";
+    column-gap: 10%;
+    height: 100vh;
+    padding: 100px 45px 20px 45px;
+    background: $primary-light-theme;
+
+    .profile-picture-container {
+        grid-area: pp;
+        justify-self: center;
+
+        .profile-picture {
+            max-height: 270px;
+            border-radius: 25px;
+        }
+    }
+
+    @media only screen and (min-width: 482px) and (max-width: 1024px) {
+        grid-template-areas: "pp desc"
+            "techs techs";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 55% 45%;
+        gap: 2rem;
+        padding: 125px 1.5rem 20px;
+
+        .profile-picture-container {
+
+            .profile-picture {
+                width: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 481px) {
+        grid-template-areas: "pp"
+            "desc"
+            "techs";
+        height: 100%;
+        row-gap: 5%;
+        padding: 80px 25px 125px;
+
+        .profile-picture-container {
+
+            .profile-picture {
+                width: 100%;
+            }
+        }
+    }
+}

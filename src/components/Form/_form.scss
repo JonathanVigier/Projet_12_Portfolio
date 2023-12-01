@@ -1,0 +1,121 @@
+.form {
+    display: grid;
+    grid-template-areas: "firstname message"
+        "lastname message"
+        "email message"
+        "submit submit"
+    ;
+    gap: 2rem;
+
+    .input-container {
+        position: relative;
+        @include flex-half-rem;
+        flex-direction: column;
+
+        .input {
+            padding: 10px;
+            border: 2px solid $solid-light-theme;
+            border-radius: 15px;
+
+            &:focus-visible {
+                outline: 2px solid $solid-light-theme_hover;
+            }
+        }
+
+
+
+    }
+
+    .firstname-container {
+        grid-area: firstname;
+    }
+
+    .lastname-container {
+        grid-area: lastname;
+    }
+
+    .email-container {
+        grid-area: email;
+    }
+
+    .email-container,
+    .firstname-container,
+    .lastname-container {
+        &.input-container {
+            .error-message {
+                position: absolute;
+                color: red;
+                font-size: 1rem;
+                font-family: $text-regular;
+                left: 1rem;
+                bottom: -1.5rem;
+                width: 80%;
+            }
+        }
+    }
+
+    #message {
+        grid-area: message;
+        padding: 10px;
+        border: 2px solid $solid-light-theme;
+        border-radius: 15px;
+
+        &:focus-visible {
+            outline: 2px solid $solid-light-theme_hover;
+        }
+    }
+
+    .submit {
+        grid-area: submit;
+        max-width: 150px;
+        padding: 0.5rem;
+        background: $solid-light-theme;
+        border: 2px solid $solid-light-theme_hover;
+        border-radius: 25px;
+        color: $white;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            background: $solid-light-theme_hover;
+        }
+    }
+
+    @media only screen and (min-width: 482px) and (max-width: 1024px) {
+
+        .email-container,
+        .firstname-container,
+        .lastname-container {
+            &.input-container {
+                .error-message {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .input-container {
+            min-width: 255px;
+
+            .error-message {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 481px) {
+        grid-template-areas: "firstname"
+            "lastname"
+            "email"
+            "message"
+            "submit";
+
+        .email-container,
+        .firstname-container,
+        .lastname-container {
+            &.input-container {
+                .error-message {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

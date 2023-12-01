@@ -1,0 +1,16 @@
+.social-media.btn {
+
+    &:hover {
+        background: ease-in-out;
+        transform: scale(1.05);
+    }
+
+    .social-media-link,
+    .social-media-icon {
+        color: $white;
+    }
+
+    .social-media-link {
+        font-family: $text-regular;
+    }
+}

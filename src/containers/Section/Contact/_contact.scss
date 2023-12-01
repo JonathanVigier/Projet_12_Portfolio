@@ -1,0 +1,14 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+
+    @media only screen and (max-width: 481px) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 769px) {
+        width: 80vw;
+    }
+}

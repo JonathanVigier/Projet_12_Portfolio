@@ -1,0 +1,81 @@
+{
+  "description": "Hello, I'm Jonathan. I'm 23 years old, and I'm a recently graduated young Front-end developer. Passionate about crafting exceptional user experiences, I specialize in development using JavaScript and React.js. My commitment to innovation, code quality, and creative problem-solving makes me a professional determined to excel in the field of web development. Ready to take on new challenges, I'm enthusiastic about contributing to projects that demand a strong Front-end expertise.",
+  "technologies": [
+    {
+      "name": "Front-end",
+      "list": [
+        { "icon": "fa-brands fa-sass", "name": "Sass" },
+        { "icon": "fa-brands fa-react", "name": "ReactJs" }
+      ]
+    },
+    {
+      "name": "Back-end",
+      "list": [{ "icon": "fa-brands fa-node-js", "name": "NodeJs" }]
+    }
+  ],
+  "picture": "./assets/images/pp.png",
+  "social_medias": [
+    {
+      "icon": "fa-brands fa-github",
+      "name": "Github",
+      "link": "https://github.com/JonathanVigier"
+    },
+    {
+      "icon": "fa-brands fa-linkedin",
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/vigier-jonathan/"
+    },
+    {
+      "icon": "fa-brands fa-instagram",
+      "name": "Instagram",
+      "link": "https://www.instagram.com/jonathanvigier/"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Kasa",
+      "description": "Kasa is the website of a fictional real estate agency, developed using the ReactJS library. The entire styling is managed through Sass. It allows users to visualize the agency's catalog through a carousel and to view the details of a property via a dedicated page.",
+      "picture": "./assets/images/kasa/kasa-overview.png",
+      "pictures": [
+        "/assets/images/kasa/kasa-sc1.png",
+        "/assets/images/kasa/kasa-sc2.png",
+        "/assets/images/kasa/kasa-sc3.png",
+        "/assets/images/kasa/kasa-sc4.png"
+      ],
+      "link": "https://kasa-jv.netlify.app/",
+      "repo_link": "https://github.com/JonathanVigier/Projet_8_Kasa",
+      "techs": ["Sass", "ReactJs"]
+    },
+    {
+      "id": 2,
+      "name": "724Events",
+      "description": "724Events is the website of an event services agency dedicated to fulfilling your requests exactly as you envision. The agency offers various rates for different services tailored to your specific needs.",
+      "picture": "./assets/images/724events/724events-overview.png",
+      "pictures": [
+        "/assets/images/724events/724events-sc1.png",
+        "/assets/images/724events/724events-sc2.png",
+        "/assets/images/724events/724events-sc3.png",
+        "/assets/images/724events/724events-sc4.png"
+      ],
+      "link": "https://724events-jv.netlify.app/",
+      "repo_link": "https://github.com/JonathanVigier/Projet_10_724Events",
+      "techs": ["Sass", "Javascript"]
+    },
+    {
+      "id": 3,
+      "name": "Nina Carducci",
+      "description": "Nina Carducci is the web portfolio of photographer Nina Carducci. It showcases her services, a section featuring all of her projects, and a final section with a form through which we can get in touch with her.",
+      "picture": "./assets/images/nina/nina_carducci_overview.png",
+      "pictures": [
+        "/assets/images/nina/nina_carducci-sc1.png",
+        "/assets/images/nina/nina_carducci-sc2.png",
+        "/assets/images/nina/nina_carducci-sc3.png",
+        "/assets/images/nina/nina_carducci-sc4.png"
+      ],
+      "link": "https://nina-carducci-photograph.netlify.app/",
+      "repo_link": "https://github.com/JonathanVigier/Projet_9_NinaCarducci",
+      "techs": ["Sass", "Javascript"]
+    }
+  ]
+}

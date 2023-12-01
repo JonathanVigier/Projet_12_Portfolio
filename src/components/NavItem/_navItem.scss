@@ -1,0 +1,18 @@
+.nav-button-container {
+    font-family: system-ui;
+    padding: 0px 25px;
+    transition: .3s ease-in-out;
+
+    .nav-button {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        transition: .5s ease-in-out;
+        color: $low-contrast-text-light-theme;
+        font-weight: 700;
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+        padding: 0;
+    }
+}

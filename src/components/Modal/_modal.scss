@@ -1,0 +1,47 @@
+.modal-content {
+    display: grid;
+    justify-items: end;
+    gap: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    background: $secondary-light-theme;
+    border-radius: 15px;
+
+    .modal-infos-container {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+
+        .modal-infos-content {
+            display: grid;
+            gap: 1rem;
+
+            .modal-infos-text {
+                font-size: 1.2rem;
+                line-height: 125%;
+                letter-spacing: 1px;
+                font-family: $text-regular;
+            }
+
+            .techs-list {
+                display: flex;
+                gap: 1rem;
+
+                .tech-item {
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                }
+            }
+
+            .modal-infos-link {
+                justify-self: end;
+                padding: 10px;
+                background: $solid-light-theme;
+                border-radius: 20px;
+            }
+        }
+    }
+}

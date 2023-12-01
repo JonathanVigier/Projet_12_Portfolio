@@ -1,0 +1,18 @@
+.logo-container {
+    padding: 25px;
+
+    .logo {
+        font-family: "Cinzel", serif;
+        font-weight: 600;
+        font-size: 2rem;
+        color: $low-contrast-text-light-theme;
+    }
+
+    @media only screen and (max-width: 481px) {
+        padding: 12px;
+
+        .logo {
+            font-size: 1.5rem;
+        }
+    }
+}

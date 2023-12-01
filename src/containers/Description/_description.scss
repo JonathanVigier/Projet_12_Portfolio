@@ -1,0 +1,56 @@
+.description-container {
+    @include flex-2rem;
+    flex-direction: column;
+    width: 100%;
+    max-width: 850px;
+    height: fit-content;
+    padding: 2rem;
+    background: $tertiary-light-theme;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+    grid-area: desc;
+
+    &:hover {
+        background: $tertiary-light-theme_hover;
+    }
+
+    .description-content {
+        &::first-letter {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+
+    .social-media-container {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .social-media-btn-container {
+            display: flex;
+            gap: 15px;
+        }
+    }
+
+    @media only screen and (min-width: 482px) and (max-width: 1024px) {
+        width: 90%;
+        height: fit-content;
+        gap: 1rem;
+
+        .social-media-container {
+            gap: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 481px) {
+        gap: 1.5rem;
+        padding: 0.8rem;
+
+        .social-media-container {
+
+            .social-media-btn-container {
+                flex-direction: column;
+            }
+        }
+    }
+}
